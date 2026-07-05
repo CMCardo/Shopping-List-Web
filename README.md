@@ -1,8 +1,8 @@
-# 🛒 My Shopping List (Product Manager)
+# My Shopping List (Product Manager)
 
 A web application built with PHP, MySQL, HTML, and CSS to manage categories, product groups, and specific models with their respective prices, links, and purchase statuses.
 
-## 🛠️ Installation and Setup
+## Installation and Setup
 
 To run this project on your local machine, follow these steps:
 
