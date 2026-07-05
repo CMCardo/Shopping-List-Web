@@ -15,7 +15,6 @@ $accio = isset($_GET['action']) ? $_GET['action'] : 'categories';
 
 switch ($accio) {
     
-    // --- NOVES ACCIONS DE LOGIN ---
     case 'login':
         require 'views/login.php';
         break;
