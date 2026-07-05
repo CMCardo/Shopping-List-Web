@@ -27,3 +27,6 @@ This project requires a database to work.
 
 **5. Run the project**
 Open your web browser and go to `http://localhost/Web/` to start using the application!
+
+
+tocara fer un sistema de login, que posin un nom, la contrasenya i un codi q els hi hagi de donar jo per a poder crear la conta, com si ho desplego sera en un servidor propi vull controlar quanta gent ho fa servir 

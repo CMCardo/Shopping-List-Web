@@ -1,9 +1,43 @@
 <?php
+
+session_start();
+
+$action = isset($_GET['action']) ? $_GET['action'] : 'categories';
+
+if (!isset($_SESSION['loguejat']) && $action !== 'login' && $action !== 'fer_login') {
+    header("Location: index.php?action=login");
+    exit();
+}
+
 require_once 'controllers/CategoriaController.php';
 
 $accio = isset($_GET['action']) ? $_GET['action'] : 'categories';
 
 switch ($accio) {
+    
+    // --- NOVES ACCIONS DE LOGIN ---
+    case 'login':
+        require 'views/login.php';
+        break;
+
+    case 'fer_login':
+        $password = $_POST['password'] ?? '';
+        
+        if ($password === 'password') { 
+            $_SESSION['loguejat'] = true;
+            header("Location: index.php");
+            exit();
+        } else {
+            $error_login = "Contrasenya incorrecta";
+            require 'views/login.php';
+        }
+        break;
+
+    case 'logout':
+        session_destroy();
+        header("Location: index.php?action=login");
+        exit();
+
     case 'categories':
         $controller = new CategoriaController();
         $controller->index();
@@ -15,7 +49,7 @@ switch ($accio) {
         $controller->index();
         break;
     
-        case 'nova_categoria':
+    case 'nova_categoria':
         require_once 'controllers/CategoriaController.php';
         $controller = new CategoriaController();
         $controller->nova();
@@ -63,7 +97,7 @@ switch ($accio) {
         $controller->eliminar();
         break;
         
-        case 'detall':
+    case 'detall':
         require_once 'controllers/ProducteController.php';
         $controller = new ProducteController();
         $controller->detall();
