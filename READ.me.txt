@@ -1,0 +1,13 @@
+Categories: ID, nom
+
+Productes: ID, nom, preu, link_compra, nom_foto, categoria_id 
+
+
+http://localhost/Web
+
+
+2 columns, the elements of the columns are separated rectangles with an image and a text label as a title an another one the price and the number of products, it is cliclable
+
+
+
+m'agradava com estaba fet abasn que era una fitcha horitzontal, nomes una columna, on a la esquerra hi havia uan altre foto, amb el titul, preu, descripcio i un boto que posa comprar que redirigeix on el link
