@@ -9,9 +9,7 @@
     $fitxer_css = 'categories.css';
   ?>
 
-  <link rel="stylesheet" href="/Web/public/css/<?= $fitxer_css ?>?v=<?= time() ?>" />
-  
-  <link rel="stylesheet" href="/Web/public/css/<?= $fitxer_css ?>?v=<?= time() ?>" />
+  <link rel="stylesheet" href="/public/css/<?= $fitxer_css ?>?v=<?= time() ?>" />
 
   <a href="index.php?action=logout" style="color: #ef4444; text-decoration: none; font-size: 14px; position: absolute; right: 20px; top: 20px;">Log out</a>
 

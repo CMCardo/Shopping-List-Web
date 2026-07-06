@@ -53,7 +53,6 @@
 </head>
 <body>
     <div class="login-box">
-        <h1>🛒 Accés Privat</h1>
         
         <?php if (isset($error_login)): ?>
             <div class="error-msg"><?= $error_login ?></div>

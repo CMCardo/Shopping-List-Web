@@ -22,7 +22,7 @@ switch ($accio) {
     case 'fer_login':
         $password = $_POST['password'] ?? '';
         
-        if ($password === 'password') { 
+        if ($password === '369Purple') { 
             $_SESSION['loguejat'] = true;
             header("Location: index.php");
             exit();
